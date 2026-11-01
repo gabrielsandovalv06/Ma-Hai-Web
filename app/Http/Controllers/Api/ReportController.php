@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 
 class ReportController extends Controller
 {
-    // GET /api/reports -> Retorna los reportes de las últimas 48 horas para el Mapa
+    // GET /api/reports -> Mapa público (SOLO últimas 48 horas)
     public function index(): JsonResponse
     {
         $reports = Report::with('category')
@@ -22,7 +22,7 @@ class ReportController extends Controller
         ]);
     }
 
-    // GET /api/reports/me -> Retorna el historial del usuario actual para el Perfil
+    // GET /api/reports/me -> Perfil personal (TODOS los reportes históricos del usuario)
     public function myReports(Request $request): JsonResponse
     {
         $reports = Report::where('user_id', $request->user()->id)
