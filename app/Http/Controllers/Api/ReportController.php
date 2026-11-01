@@ -9,8 +9,21 @@ use Illuminate\Http\Request;
 
 class ReportController extends Controller
 {
-    // Listar los reportes del usuario autenticado
-    public function index(Request $request): JsonResponse
+    // GET /api/reports -> Retorna los reportes de las últimas 48 horas para el Mapa
+    public function index(): JsonResponse
+    {
+        $reports = Report::with('category')
+            ->where('created_at', '>=', now()->subHours(48))
+            ->orderBy('created_at', 'desc')
+            ->get();
+
+        return response()->json([
+            'reports' => $reports,
+        ]);
+    }
+
+    // GET /api/reports/me -> Retorna el historial del usuario actual para el Perfil
+    public function myReports(Request $request): JsonResponse
     {
         $reports = Report::where('user_id', $request->user()->id)
             ->with('category')
@@ -22,7 +35,7 @@ class ReportController extends Controller
         ]);
     }
 
-    // Crear un nuevo reporte ciudadano
+    // POST /api/reports -> Crear reporte
     public function store(Request $request): JsonResponse
     {
         $validated = $request->validate([
@@ -32,7 +45,7 @@ class ReportController extends Controller
             'latitude' => ['required', 'numeric', 'between:-90,90'],
             'longitude' => ['required', 'numeric', 'between:-180,180'],
             'address' => ['nullable', 'string', 'max:255'],
-            'photo' => ['required', 'image', 'max:5120'], // Máximo 5MB
+            'photo' => ['required', 'image', 'max:5120'],
         ]);
 
         $photoPath = $request->file('photo')->store('reports', 'public');
