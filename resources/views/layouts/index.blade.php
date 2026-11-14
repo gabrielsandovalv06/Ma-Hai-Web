@@ -37,7 +37,7 @@
                     <h4 class="font-bold text-sm text-[#eab308] mb-2">El problema en cifras</h4>
                 </div>
                 <div class="bg-[#eab308] p-8 text-black rounded-sm shadow-md min-h-[140px]">
-                    <h4 class="font-bold text-sm mb-2 text-white">¿Qué contruimos?</h4>
+                    <h4 class="font-bold text-sm mb-2 text-white">¿Qué construimos?</h4>
                     <p class="text-sm font-medium text-gray-900">Un Modelo Integral de Gestión de Residuos Sólidos para el Municipio de Lerma.</p>
                 </div>
             </aside>
@@ -138,7 +138,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-                <article class="bg-[#d1e2d6] p-10 md:p-14 rounded-[2rem] shadow-sm relative">
+                <article class="bg-[#d1e2d6] p-10 md:p-14 rounded-2rem shadow-sm relative">
                     <div class="w-10 h-10 bg-[#749b83] rounded-md mb-6 flex items-center justify-center text-white font-bold">
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2L1 12h3v9h6v-6h4v6h6v-9h3L12 2z"/></svg>
                     </div>
@@ -151,19 +151,19 @@
                     </p>
                     <ul class="space-y-4 mb-12 font-semibold text-gray-800 text-xs">
                         <li class="flex items-center gap-3">
-                            <span class="w-[8px] h-[8px] bg-transparent border-2 border-[#1f3622] rounded-full flex-shrink-0"></span>
+                            <span class="w-8px h-8px bg-transparent border-2 border-[#1f3622] rounded-full flex-shrink-0"></span>
                             Ing. en Sistemas de Tecnología de la Información
                         </li>
                         <li class="flex items-center gap-3">
-                            <span class="w-[8px] h-[8px] bg-transparent border-2 border-[#1f3622] rounded-full flex-shrink-0"></span>
+                            <span class="w-8px h-8px bg-transparent border-2 border-[#1f3622] rounded-full flex-shrink-0"></span>
                             Biología Ambiental
                         </li>
                         <li class="flex items-center gap-3">
-                            <span class="w-[8px] h-[8px] bg-transparent border-2 border-[#1f3622] rounded-full flex-shrink-0"></span>
+                            <span class="w-8px h-8px bg-transparent border-2 border-[#1f3622] rounded-full flex-shrink-0"></span>
                             Arte y Comunicación Digitales
                         </li>
                         <li class="flex items-center gap-3">
-                            <span class="w-[8px] h-[8px] bg-transparent border-2 border-[#1f3622] rounded-full flex-shrink-0"></span>
+                            <span class="w-8px h-8px bg-transparent border-2 border-[#1f3622] rounded-full flex-shrink-0"></span>
                             Políticas Públicas
                         </li>
                     </ul>
@@ -172,7 +172,7 @@
                     </a>
                 </article>
 
-                <article class="bg-[#f4d3c4] p-10 md:p-14 rounded-[2rem] shadow-sm relative">
+                <article class="bg-[#f4d3c4] p-10 md:p-14 rounded-2rem shadow-sm relative">
                     <div class="w-10 h-10 bg-[#b55d37] rounded-md mb-6 flex items-center justify-center text-white font-bold">
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
                     </div>
@@ -182,15 +182,15 @@
                     </p>
                     <ul class="space-y-4 mb-12 font-semibold text-gray-800 text-xs">
                         <li class="flex items-center gap-3">
-                            <span class="w-[8px] h-[8px] bg-transparent border-2 border-[#b55d37] rounded-full flex-shrink-0"></span>
+                            <span class="w-8px h-8px bg-transparent border-2 border-[#b55d37] rounded-full flex-shrink-0"></span>
                             Trabajo de campo en regiones
                         </li>
                         <li class="flex items-center gap-3">
-                            <span class="w-[8px] h-[8px] bg-transparent border-2 border-[#b55d37] rounded-full flex-shrink-0"></span>
+                            <span class="w-8px h-8px bg-transparent border-2 border-[#b55d37] rounded-full flex-shrink-0"></span>
                             Difusión y comunicación
                         </li>
                         <li class="flex items-center gap-3">
-                            <span class="w-[8px] h-[8px] bg-transparent border-2 border-[#b55d37] rounded-full flex-shrink-0"></span>
+                            <span class="w-8px h-8px bg-transparent border-2 border-[#b55d37] rounded-full flex-shrink-0"></span>
                             Talleres en escuelas y colonias
                         </li>
                     </ul>
