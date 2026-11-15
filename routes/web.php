@@ -2,11 +2,27 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'layouts.index')->name('inicio');
-Route::redirect('/inicio', '/', 301);
+// Página principal (Inicio)
+Route::get('/', function () {
+    return view('index');
+})->name('inicio');
 
-Route::view('/nosotros', 'nosotros')->name('nosotros');
-Route::view('/comunidades', 'comunidades')->name('comunidades');
-Route::view('/biblioteca', 'biblioteca')->name('biblioteca');
-Route::view('/videoteca', 'videoteca')->name('videoteca');
-Route::view('/contacto', 'contacto')->name('contacto');
+// Página Sobre Nosotros (Historia, Misión, Visión, Valores, Equipo y Alianzas)
+Route::get('/sobre-nosotros', function () {
+    return view('nosotros');
+})->name('nosotros');
+
+// Página Comunidades (Recorrido territorial y las 8 regiones de Lerma)
+Route::get('/comunidades', function () {
+    return view('comunidades');
+})->name('comunidades');
+
+// Página Recursos / Biblioteca (Infografías y Videoteca)
+Route::get('/recursos', function () {
+    return view('recursos');
+})->name('recursos');
+
+// Página Participa / Contacto (Servicio Social UAM y Voluntariado)
+Route::get('/participa', function () {
+    return view('participa');
+})->name('participa');
