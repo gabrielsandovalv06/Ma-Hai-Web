@@ -3,7 +3,7 @@
 @section('title', 'Participa | Servicio Social y Voluntariado MA-HAI')
 
 @section('content')
-    <section class="bg-white py-16 md:py-24 px-4 sm:px-8 md:px-16 text-gray-900">
+    <section class="bg-[#f7f5eb] py-5 md:py-10 px-6 sm:px-8 md:px-16 text-gray-900">
         <div class="max-w-7xl mx-auto">
             <span class="text-xs font-bold uppercase tracking-widest text-[#b55d37] block mb-2">Convocatoria Abierta</span>
             <h1 class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold mb-3">Tú también puedes ser parte</h1>

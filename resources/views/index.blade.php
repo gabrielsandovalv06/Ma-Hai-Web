@@ -163,7 +163,7 @@
     </section>
 
     <!-- SECCIÓN: PARTICIPA -->
-    <section id="participa-resumen" class="bg-white py-16 md:py-24 px-4 sm:px-8 md:px-16 text-gray-900">
+    <section id="participa-resumen" class="bg-[#f7f5eb] py-16 md:py-24 px-4 sm:px-8 md:px-16 text-gray-900">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 uppercase tracking-wide">Tú también puedes ser parte</h2>
             <p class="mb-10 md:mb-16 text-sm font-medium text-gray-500 uppercase tracking-wider">
